@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+	<title>Frontend Mentor | IP Address Tracker</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+		crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		crossorigin="">
+	</script>
+
+</head>
+<body>
+	<header>
+		<div class="tracker">
+			<h2 class="f-500">IP Address Tracker</h2>
+			<form action="#" method="GET">
+				<input type="text" name="" id="search-field" placeholder="Search for any IP address or domain" pattern="^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$">
+				<button type="submit" class="btn" id="btn">
+					<img src="/images/icon-arrow.svg" alt="icon-arrow">
+				</button>
+			</form>
+		</div>
+		<div class="informations">
+			<div class="information">
+				<h3 class="f-500 info-text">Ip Adress</h3>
+				<p class="value f-700" id="ip"></p>
+				<div class="separator"></div>
+			</div>
+			<div class="information">
+				<h3 class="f-500 info-text">Location</h3>
+				<p class="value f-700" id="location"></p>
+				<div class="separator"></div>
+			</div>
+			<div class="information">
+				<h3 class="f-500 info-text">Timezone</h3>
+				<p class="value f-700" id="timezone"></p>
+				<div class="separator"></div>
+			</div>
+			<div class="information">
+				<h3 class="f-500 info-text">ISP</h3>
+				<p class="value f-700" id="isp"></p>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div id="map"></div>
+	</main>
+
+	<!--
+
+	Search for any IP address or domain
+
+	IP Address
+	Location
+	Timezone
+		UTC (add offset value dynamically using the API)
+	ISP -->
+
+	<div class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+		Coded by <a href="https://github.com/diogolopeswork">Diogo Lopes</a>.
+	</div>
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+		crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		crossorigin=""></script>
+</body>
+</html>
